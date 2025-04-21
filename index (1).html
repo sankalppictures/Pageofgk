@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <title>Current Affairs - 21 अप्रैल 2025</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom right, #e0f7fa, #ffffff);
+    }
+    .page {
+      width: 794px;
+      margin: 20px auto;
+      padding: 30px;
+      background: white;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border-radius: 10px;
+      color: #000;
+    }
+    .title {
+      text-align: center;
+      font-size: 30px;
+      font-weight: bold;
+      color: #00796b;
+    }
+    .subtitle {
+      text-align: center;
+      font-size: 16px;
+      margin-top: 5px;
+      margin-bottom: 20px;
+      color: #555;
+    }
+    .questions {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    .column {
+      width: 48%;
+    }
+    .question {
+      background: #f1f8e9;
+      padding: 12px;
+      margin-bottom: 16px;
+      border-left: 5px solid #43a047;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+    .question-number {
+      font-weight: bold;
+      margin-bottom: 4px;
+      color: #33691e;
+    }
+    .option {
+      margin-left: 10px;
+    }
+    .correct {
+      color: #2e7d32;
+      font-weight: bold;
+    }
+    .footer {
+      text-align: center;
+      margin-top: 30px;
+      font-weight: bold;
+      color: #388e3c;
+    }
+    #downloadBtn {
+      display: block;
+      margin: 20px auto;
+      padding: 10px 20px;
+      background: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    #downloadBtn:hover {
+      background: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+<div class="page" id="capture" contenteditable="true">
+  <div class="title">CURRENT AFFAIRS</div>
+  <div class="subtitle">21 अप्रैल 2025</div>
+  <div class="subtitle">UPPSC | PSC | SSC | RAILWAY | UP Police | BPSC | ONE DAY EXAM</div>
+
+  <div class="questions">
+    <div class="column">
+      <div class="question">
+        <div class="question-number">1. प्रश्न यहाँ</div>
+        <div class="option">a) विकल्प</div>
+        <div class="option correct">b) सही उत्तर</div>
+        <div class="option">c) विकल्प</div>
+      </div>
+      <div class="question">
+        <div class="question-number">2. प्रश्न यहाँ</div>
+        <div class="option">a) विकल्प</div>
+        <div class="option">b) विकल्प</div>
+        <div class="option correct">c) सही उत्तर</div>
+      </div>
+      <div class="question">
+        <div class="question-number">3. प्रश्न यहाँ</div>
+        <div class="option">a) विकल्प</div>
+        <div class="option correct">b) सही उत्तर</div>
+        <div class="option">c) विकल्प</div>
+      </div>
+      <div class="question">
+        <div class="question-number">4. प्रश्न यहाँ</div>
+        <div class="option correct">a) सही उत्तर</div>
+        <div class="option">b) विकल्प</div>
+        <div class="option">c) विकल्प</div>
+      </div>
+      <div class="question">
+        <div class="question-number">5. प्रश्न यहाँ</div>
+        <div class="option">a) विकल्प</div>
+        <div class="option">b) विकल्प</div>
+        <div class="option correct">c) सही उत्तर</div>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="question">
+        <div class="question-number">6. प्रश्न यहाँ</div>
+        <div class="option">a) विकल्प</div>
+        <div class="option correct">b) सही उत्तर</div>
+        <div class="option">c) विकल्प</div>
+      </div>
+      <div class="question">
+        <div class="question-number">7. प्रश्न यहाँ</div>
+        <div class="option correct">a) सही उत्तर</div>
+        <div class="option">b) विकल्प</div>
+        <div class="option">c) विकल्प</div>
+      </div>
+      <div class="question">
+        <div class="question-number">8. प्रश्न यहाँ</div>
+        <div class="option">a) विकल्प</div>
+        <div class="option correct">b) सही उत्तर</div>
+        <div class="option">c) विकल्प</div>
+      </div>
+      <div class="question">
+        <div class="question-number">9. प्रश्न यहाँ</div>
+        <div class="option">a) विकल्प</div>
+        <div class="option">b) विकल्प</div>
+        <div class="option correct">c) सही उत्तर</div>
+      </div>
+      <div class="question">
+        <div class="question-number">10. प्रश्न यहाँ</div>
+        <div class="option correct">a) सही उत्तर</div>
+        <div class="option">b) विकल्प</div>
+        <div class="option">c) विकल्प</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">Today's Current Affairs ✓</div>
+</div>
+
+<button id="downloadBtn">Download Image</button>
+
+<script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+<script>
+  const captureDiv = document.getElementById("capture");
+
+  if (localStorage.getItem("currentAffairsContent")) {
+    captureDiv.innerHTML = localStorage.getItem("currentAffairsContent");
+  }
+
+  captureDiv.addEventListener("input", () => {
+    localStorage.setItem("currentAffairsContent", captureDiv.innerHTML);
+  });
+
+  document.getElementById("downloadBtn").addEventListener("click", function () {
+    html2canvas(captureDiv).then(function (canvas) {
+      const link = document.createElement("a");
+      link.download = "current_affairs.png";
+      link.href = canvas.toDataURL();
+      link.click();
+    });
+  });
+</script>
+
+</body>
+</html>
